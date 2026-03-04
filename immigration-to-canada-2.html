@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Immigration to Canada | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Immigrants from 150&#x2B; countries between 1980 to 2013" />
+    <meta name="keywords" content="data visualization,geography,canada" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="WBT/j2MiUZebX8x/SAvaKA==" type="text/javascript">
+    window["pageRequestStartTime"] = 1772615803039;
+    window["pageRequestEndTime"] = 1772615803045;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="WBT/j2MiUZebX8x/SAvaKA==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="WBT/j2MiUZebX8x/SAvaKA==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-306d417b05ddaab6.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="WBT/j2MiUZebX8x/SAvaKA==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/ammaraahmad/immigration-to-canada" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=a53f951c511cf82e" />
+
+  
+    
+ 
+      <script nonce="WBT/j2MiUZebX8x/SAvaKA==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="WBT/j2MiUZebX8x/SAvaKA==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="WBT/j2MiUZebX8x/SAvaKA==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/ammaraahmad/immigration-to-canada" />
+    <meta property="og:title" content="Immigration to Canada" />
+    <meta property="og:description" content="Immigrants from 150&#x2B; countries between 1980 to 2013" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+        <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/1638238/2690788/172496b0052c289138992cc8fe1aa88f/dataset-card.png?t=2021-10-09-16-04-46" />
+        <meta property="twitter:image" content="https://storage.googleapis.com/kaggle-datasets-images/1638238/2690788/172496b0052c289138992cc8fe1aa88f/dataset-card.png?t=2021-10-09-16-04-46" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="WBT/j2MiUZebX8x/SAvaKA==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Immigration to Canada","description":"### Context\n\nThe Main Purpose for uploading this dataset is to analyze the trends and hidden patterns of Immigrants from all over the world to Canada.\n\n\n### Content\n\nThis dataset consists of immigrants record from 150+ countries to Canada between 1980 to 2013.\n\n\n### Acknowledgements\n\n[Data Source](https://www.un.org/en/development/desa/population/migration)\n\n### Inspiration\n  \nBy using Data visualization , find out hidden Patterns .","url":"https://www.kaggle.com/ammaraahmad/immigration-to-canada","version":1,"keywords":["technique, data visualization","subject, earth and nature, earth science, geography","geography and places, north america, canada"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["1638238"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"ammaraahmad","url":"https://www.kaggle.com/ammaraahmad","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/6648246-kg.png?t=2024-09-01-13-24-54"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/ammaraahmad/immigration-to-canada/download?datasetVersionNumber=1","contentSize":"13191 bytes"}],"commentCount":1,"dateModified":"2021-10-09T15:58:39.48Z","discussionUrl":"https://www.kaggle.com/ammaraahmad/immigration-to-canada/discussion","alternateName":"Immigrants from 150+ countries between 1980 to 2013","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/1638238/2690788/172496b0052c289138992cc8fe1aa88f/dataset-card.png?t=2021-10-09-16-04-46","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":1},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":7911},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":36973},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":77}]}</script>
+
+
+  
+    
+
+  
+    
+
+
+
+    <script nonce="WBT/j2MiUZebX8x/SAvaKA==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="WBT/j2MiUZebX8x/SAvaKA==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="WBT/j2MiUZebX8x/SAvaKA==" src="/static/assets/runtime.js?v=81ecf1f5f06d7db9"></script>
+  <script nonce="WBT/j2MiUZebX8x/SAvaKA==" src="/static/assets/vendor.js?v=704070c93829c513"></script>
+  <script nonce="WBT/j2MiUZebX8x/SAvaKA==" src="/static/assets/app.js?v=3ce93851d6919fe4"></script>
+    <script nonce="WBT/j2MiUZebX8x/SAvaKA==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="WBT/j2MiUZebX8x/SAvaKA==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="WBT/j2MiUZebX8x/SAvaKA==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
